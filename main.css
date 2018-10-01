@@ -1,7 +1,7 @@
 :root {
     --opacity-value: 1;
-    --black-color: 1;
-    --white-color: ;
+    --black-color: black;
+    --white-color: white;
     --orange-color: #fe8900;
 }
 
@@ -64,7 +64,7 @@ body {
 .head {
     border-top-left-radius: 101% 211%;
     border-top-right-radius: 96% 149%;
-    background: black;
+    background: var(--black-color);
     width: 85px;
     height: 60px;
     position: absolute;
@@ -83,10 +83,10 @@ body {
 .eye {
     width: 25px;
     height: 25px;
-    background: white;
+    background: var(--white-color);
     border-radius: 50%;
     position: absolute;
-    border: solid black 4px;
+    border: solid var(--black-color) 4px;
 }
 
 .eye--2 {
@@ -96,7 +96,7 @@ body {
 .bill {
     width: 4px;
     height: 4px;
-    background: black;
+    background: var(--black-color);
     border-radius: 50%;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 .beak {
-    background: #fe8900;
+    background: var(--orange-color);
     position: absolute;
     bottom: -2px;
     width: 17px;
@@ -130,7 +130,7 @@ body {
 }
 
 .body--top {
-    background: black;
+    background: var(--black-color);
     width: 90px;
     height: 64px;
     top: 60px;
@@ -142,7 +142,7 @@ body {
 }
 
 .body--bottom {
-    background: black;
+    background: var(--black-color);
     width: 97px;
     height: 82px;
     top: 94px;
@@ -155,7 +155,7 @@ body {
 }
 
 .white-body {
-    background: white;
+    background: var(--white-color);
     height: 59px;
     width: 47px;
     bottom: 18px;
@@ -171,7 +171,7 @@ body {
 
 .arm {
     position: absolute;
-    background: black;
+    background: var(--black-color);
     z-index: 10;
     opacity: var(--opacity-value);
 }
@@ -188,7 +188,7 @@ body {
 
 .arm--left .white-arm {
     position: absolute;
-    background: white;
+    background: var(--white-color);
     height: 11px;
     width: 33px;
     left: 5px;
@@ -202,7 +202,7 @@ body {
 
 .arm--left .white-arm-2 {
     position: absolute;
-    background: white;
+    background: var(--white-color);
     height: 16px;
     width: 9px;
     left: 26px;
@@ -226,7 +226,7 @@ body {
 
 .arm--right .white-arm {
     position: absolute;
-    background: white;
+    background: var(--black-color);
     height: 11px;
     width: 33px;
     left: 40px;
@@ -240,7 +240,7 @@ body {
 
 .arm--right .black-arm {
     position: absolute;
-    background: #000000;
+    background: var(--black-color);
     height: 8px;
     width: 25px;
     left: 35px;
@@ -256,7 +256,7 @@ body {
     position: absolute;
     z-index: 1;
     bottom: 0;
-    border: solid black 4px;
+    border: solid var(--black-color) 4px;
     left: 38px;
     border-bottom-right-radius: 8px 6px;
     border-top-right-radius: 9px 9px;
